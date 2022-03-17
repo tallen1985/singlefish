@@ -149,6 +149,13 @@ footer #footLeft {
   border-top-right-radius: 5px;
 }
 
+@media screen and (max-width: 800px) {
+  footer #footLeft {
+    width: 100%;
+    border-right: none;
+  }
+}
+
 footer #footCenter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,16 +166,30 @@ footer #footCenter {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 350px;
+          flex: 3 1 350px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 800px) {
+  footer #footCenter {
+    border: none;
+  }
+}
+
 footer #footCenter #footCenterTop {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  footer #footCenter #footCenterTop {
+    width: 100%;
+    border: none;
+    background-color: lightblue;
+  }
 }
 
 footer #footCenter #footCenterBottom {
@@ -182,5 +203,11 @@ footer #footRight {
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-top-left-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  footer #footRight {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,8 @@
+@mixin tablet {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
 body {
   box-sizing: content-box;
   padding: 0;
@@ -107,15 +112,27 @@ footer {
     border-top: 2px solid black;
     border-right: 2px solid black;
     border-top-right-radius: 5px;
+    @include tablet {
+      width: 100%;
+      border-right: none;
+    }
   }
   #footCenter {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    flex-grow: 1;
+    flex: 3 1 350px;
     justify-content: flex-end;
+    @include tablet {
+      border: none;
+    }
     #footCenterTop {
       text-transform: uppercase;
+      @include tablet {
+        width: 100%;
+        border: none;
+        background-color: lightblue;
+      }
     }
     #footCenterBottom {
       background-color: lightblue;
@@ -128,5 +145,8 @@ footer {
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-top-left-radius: 5px;
+    @include tablet {
+      width: 100%;
+    }
   }
 }
