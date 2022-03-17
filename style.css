@@ -67,6 +67,12 @@ main:before {
   font-size: 5em;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
 .content .fas {
   font-size: 10em;
 }
@@ -185,6 +191,11 @@ footer #footCenter #footCenterTop {
     background-color: lightblue;
   }
 }
+
+footer #footCenterTop {
+  color: white;
+}
+
 
 footer #footCenter #footCenterBottom {
   background-color: lightblue;
