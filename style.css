@@ -39,7 +39,8 @@ main:before {
   left: 0;
   top: 0;
   background-image: url(./images/Floor-Mount-Square-Nose-Installed.webp);
-  background-position: center;
+  background-position: top center;
+  background-repeat: no-repeat;
   -webkit-filter: grayscale(0.2);
           filter: grayscale(0.2);
 }
@@ -59,10 +60,6 @@ main:before {
 
 .content #tagline h2 {
   font-size: 2rem;
-}
-
-.content #tagline h3 {
-  padding-top: 4em;
 }
 
 .content h1 {
@@ -107,9 +104,20 @@ main:before {
 }
 
 .cta-row .cta .cta-btn {
+  font-size: 1.5em;
+  background-color: lightblue;
   margin: 1em;
   padding: 1em;
   border-radius: 5px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.cta-row .cta .cta-btn:hover {
+  background: darkslateblue;
+  color: lightblue;
+  -webkit-transition: all 240ms ease-in-out;
+  transition: all 240ms ease-in-out;
 }
 
 footer {
