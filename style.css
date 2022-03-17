@@ -100,7 +100,8 @@ main:before {
 }
 
 .cta-row .cta {
-  margin: 2em 1em;
+  min-width: 125px;
+  margin: 2em 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,15 +117,67 @@ main:before {
           justify-content: center;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  text-align: left;
 }
 
-.cta-row .cta:hover {
+.cta-row .cta:hover i {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   text-shadow: 2px 2px black;
   color: white;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+}
+
+.cta-row .cta a {
+  margin-top: 1em;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.cta-row .cta:hover a {
+  color: white;
+}
+
+.cta-row .cta a:after {
+  content: " >>";
+  position: absolute;
+  margin-left: 0.25em;
+}
+
+.cta-row .cta:hover a:after {
+  -webkit-animation-name: wiggle;
+          animation-name: wiggle;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    margin-left: 0.25em;
+  }
+  50% {
+    margin-left: 0.75em;
+  }
+  100% {
+    margin-left: 0.25em;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    margin-left: 0.25em;
+  }
+  50% {
+    margin-left: 0.75em;
+  }
+  100% {
+    margin-left: 0.25em;
+  }
 }
 
 footer {
