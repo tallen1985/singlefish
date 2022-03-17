@@ -101,7 +101,6 @@ main:before {
 
 .cta-row .cta {
   margin: 2em 1em;
-  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
