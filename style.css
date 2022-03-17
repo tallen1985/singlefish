@@ -5,6 +5,7 @@ body {
   margin: 0;
   background: url(./images/istockphoto-938823252-612x612.jpg);
   background-repeat: repeat;
+  font-size: 3vw;
 }
 
 h1 {
@@ -42,8 +43,8 @@ main:before {
   background-image: url(./images/Floor-Mount-Square-Nose-Installed.webp);
   background-position: top center;
   background-repeat: no-repeat;
-  -webkit-filter: grayscale(0.2);
-          filter: grayscale(0.2);
+  -webkit-filter: grayscale(0.3);
+          filter: grayscale(0.3);
 }
 
 .content {
@@ -60,16 +61,17 @@ main:before {
 }
 
 .content #tagline h2 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .content h1 {
   font-size: 5em;
+  text-shadow: 2px 2px lightgrey;
 }
 
 @media screen and (max-width: 700px) {
   .content h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 }
 
