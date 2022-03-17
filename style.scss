@@ -89,6 +89,9 @@ main:before {
     justify-content: center;
     transition: all 200ms ease-in-out;
     text-align: left;
+    @media screen and (max-width: 400px) {
+      width: 100%;
+    }
   }
   .cta:hover i {
     transform: scale(1.1);

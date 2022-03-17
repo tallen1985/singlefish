@@ -120,6 +120,12 @@ main:before {
   text-align: left;
 }
 
+@media screen and (max-width: 400px) {
+  .cta-row .cta {
+    width: 100%;
+  }
+}
+
 .cta-row .cta:hover i {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
