@@ -11,6 +11,7 @@ h1 {
   margin-top: 0;
   padding-top: 1em;
   font-family: "Noto Serif", serif;
+  overflow-wrap: break-word;
 }
 
 h2,
@@ -87,7 +88,7 @@ main:before {
 
 .cta-row .cta {
   margin: 2em 1em;
-  width: 200px;
+  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
