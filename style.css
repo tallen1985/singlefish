@@ -102,25 +102,17 @@ main:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
-.cta-row .cta .cta-btn {
-  width: 150px;
-  font-size: 1.5em;
-  background-color: lightblue;
-  margin: 1em;
-  padding: 1em;
-  border-radius: 5px;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-
-.cta-row .cta .cta-btn:hover {
-  background: darkslateblue;
-  border: 2px solid darkslateblue;
-  color: lightblue;
-  -webkit-transition: all 240ms ease-in-out;
-  transition: all 240ms ease-in-out;
+.cta-row .cta:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: black;
+  color: white;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 footer {
