@@ -182,6 +182,7 @@ footer #footCenter {
 
 footer #footCenter #footCenterTop {
   text-transform: uppercase;
+  color: white;
 }
 
 @media screen and (max-width: 800px) {
@@ -192,9 +193,7 @@ footer #footCenter #footCenterTop {
   }
 }
 
-footer #footCenterTop {
-  color: white;
-}
+
 
 
 footer #footCenter #footCenterBottom {
