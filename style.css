@@ -115,6 +115,7 @@ main:before {
 
 .cta-row .cta .cta-btn:hover {
   background: darkslateblue;
+  border: 2px solid darkslateblue;
   color: lightblue;
   -webkit-transition: all 240ms ease-in-out;
   transition: all 240ms ease-in-out;

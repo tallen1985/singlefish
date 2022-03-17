@@ -86,6 +86,7 @@ main:before {
     }
     .cta-btn:hover {
       background: darkslateblue;
+      border: 2px solid darkslateblue;
       color: lightblue;
       transition: all 240ms ease-in-out;
     }
